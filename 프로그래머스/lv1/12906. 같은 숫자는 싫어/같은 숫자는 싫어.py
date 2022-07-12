@@ -1,6 +1,6 @@
 def solution(arr):
     answer = []
-    li1 = -1
+    li1 = 0
     for i in arr:
         if i != li1:
             answer.append(i)
