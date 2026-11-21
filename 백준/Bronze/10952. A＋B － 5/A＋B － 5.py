@@ -1,10 +1,5 @@
 while True:
-    A,B = map(int,input().split())
-    if A + B ==0:
-        pass
+    first, second = map(int, input().split())
+    if first == second == 0:
         break
-    elif A+B != 0:
-         print(A+B)
-    
-     
-    
+    print(first + second)
