@@ -1,6 +1,3 @@
 def solution(n):
-    a = "수박" * n
-    b = []
-    for i in range(n):
-        b.append(a[i])
-    return "".join(b)
+    pairs, extra = divmod(n, 2)
+    return "수박" * pairs + "수" * extra

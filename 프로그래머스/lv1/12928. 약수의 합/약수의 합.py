@@ -1,6 +1,12 @@
+from math import isqrt
+
+
 def solution(n):
-    answer = 0
-    for i in range(1,n+1):
-        if n % i ==0:
-            answer += i
-    return answer
+    total = 0
+    for divisor in range(1, isqrt(n) + 1):
+        if n % divisor == 0:
+            partner = n // divisor
+            total += divisor
+            if partner != divisor:
+                total += partner
+    return total

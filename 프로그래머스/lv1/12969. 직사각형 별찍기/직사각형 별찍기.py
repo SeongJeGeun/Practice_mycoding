@@ -1,3 +1,4 @@
-a, b = map(int, input().split())
-for i in range(b):
-        print("*" * a)
+width, height = map(int, input().split())
+row = "*" * width
+for _ in range(height):
+    print(row)

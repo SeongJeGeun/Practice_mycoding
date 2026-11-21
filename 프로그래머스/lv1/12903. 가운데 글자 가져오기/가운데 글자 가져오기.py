@@ -1,9 +1,2 @@
 def solution(s):
-    answer = ''
-    if len(s) % 2 ==0:
-        answer= s[(len(s)//2)-1] + s[len(s)//2] 
-    elif len(s) == 1:
-        answer = s
-    else:
-        answer= s[len(s)//2]
-    return answer
+    return s[(len(s) - 1) // 2 : len(s) // 2 + 1]

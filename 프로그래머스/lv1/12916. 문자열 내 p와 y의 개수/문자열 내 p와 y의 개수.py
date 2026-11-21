@@ -1,7 +1,3 @@
 def solution(s):
-    answer = True
-
-    if  s.lower().count('p') == s.lower().count('y'):
-        return answer
-    else:
-        return False
+    lower = s.lower()
+    return lower.count("p") == lower.count("y")

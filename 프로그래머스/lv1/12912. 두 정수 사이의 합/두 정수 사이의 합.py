@@ -1,5 +1,3 @@
 def solution(a, b):
-    answer = 0
-    for i in range(a,b+1):
-        answer += i
-    return answer
+    count = abs(b - a) + 1
+    return (a + b) * count // 2

@@ -1,6 +1,7 @@
 import sys
-t = int(input())
 
-for t in range(1, t+1):
-        A,B = map(int,sys.stdin.readline().split())
-        print(A+B)
+lines = sys.stdin.buffer
+count = int(next(lines))
+for _ in range(count):
+    first, second = map(int, next(lines).split())
+    sys.stdout.write(f"{first + second}\n")

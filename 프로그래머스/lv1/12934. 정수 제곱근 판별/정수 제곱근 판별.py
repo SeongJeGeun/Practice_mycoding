@@ -1,7 +1,8 @@
-import math
+from math import isqrt
+
+
 def solution(n):
-    a = math.sqrt(n)
-    if n % a == 0:
-        return math.pow(a+1, 2)
-    else:
-        return -1
+    root = isqrt(n)
+    if root * root == n:
+        return (root + 1) ** 2
+    return -1
